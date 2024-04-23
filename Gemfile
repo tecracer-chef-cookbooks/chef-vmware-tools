@@ -11,7 +11,6 @@ gem 'test-kitchen'
 group :development do
   gem 'chefspec'
   gem 'cookstyle'
-  gem 'foodcritic'
   gem 'guard'
   gem 'guard-foodcritic'
   gem 'guard-rspec'
