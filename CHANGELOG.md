@@ -1,5 +1,10 @@
 # Changelog
 
+## [3.0.1] - 2024-03-22
+
+* Removed dependency on yum and apt, they're not required.
+* Added version into the Windows package resource, to stop repeated installations.
+
 ## [3.0.0] - 2020-05-06
 
 * update minimum required chef version to 15.0 (BREAKING CHANGE)
