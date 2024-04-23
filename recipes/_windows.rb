@@ -15,6 +15,7 @@ if node['vmware-tools']['windows_reboot'] == false
     installer_type :custom
     options '/s /v"/qn REBOOT=R"'
     returns [0, 1618, 1641, 3010]
+    version node['vmware-tools']['version'].sub('-', '.')
     action :install
   end
 
@@ -24,6 +25,7 @@ else
     installer_type :custom
     options '/s /v"/qn REBOOT=R"'
     returns [0, 1618, 1641, 3010]
+    version node['vmware-tools']['version'].sub('-', '.')
     action :install
     notifies :reboot_now, 'reboot[Restart Computer]', :immediately
   end

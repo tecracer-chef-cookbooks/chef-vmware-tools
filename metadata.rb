@@ -3,7 +3,7 @@ maintainer 'tecRacer Opensource'
 maintainer_email 'opensource@tecracer.de'
 license 'Apache-2.0'
 description 'Installs/Configures vmware-tools'
-version '3.0.0'
+version '3.0.1'
 
 chef_version '>= 15.0'
 
@@ -14,10 +14,6 @@ issues_url 'https://github.com/tecracer-chef-cookbooks/vmware-tools/issues'
 # If you upload to Supermarket you should set this so your cookbook
 # gets a `View Source` link
 source_url 'https://github.com/tecracer-chef-cookbooks/vmware-tools'
-
-# Dependencies
-depends 'apt'
-depends 'yum'
 
 # Supported OS
 supports 'amazon'
